@@ -63,11 +63,6 @@ class lsb (
     false => $lsb::version,
   }
 
-  $manage_audit = $lsb::bool_audit_only ? {
-    true  => 'all',
-    false => undef,
-  }
-
   ### Managed resources
   if ! defined(Package[$lsb::package]) {
     package { $lsb::package:
