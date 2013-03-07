@@ -1,4 +1,4 @@
-= Puppet module: lsb
+# Puppet module: lsb
 
 This is a Puppet module for lsb
 It provides only package installation and management for minimal lsb setup
@@ -15,7 +15,7 @@ Released under the terms of Apache 2 License.
 This module requires the presence of Example42 Puppi module in your modulepath.
 
 
-== USAGE - Basic management
+## USAGE - Basic management
 
 * Install lsb
 
