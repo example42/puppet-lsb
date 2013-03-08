@@ -45,3 +45,5 @@ This module requires the presence of Example42 Puppi module in your modulepath.
           my_class => 'example42::my_lsb',
         }
 
+
+[![Build Status](https://travis-ci.org/example42/puppet-lsb.png?branch=master)](https://travis-ci.org/example42/puppet-lsb)
