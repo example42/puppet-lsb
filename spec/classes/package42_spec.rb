@@ -4,7 +4,7 @@ describe 'lsb' do
 
   let(:title) { 'lsb' }
   let(:node) { 'rspec.example42.com' }
-  let(:facts) { { :ipaddress => '10.42.42.42' } }
+  let(:facts) { { :ipaddress => '10.42.42.42' , :operatingsystem => 'RedHat'} }
 
   describe 'Test minimal installation' do
     it { should contain_package('lsb').with_ensure('present') }
