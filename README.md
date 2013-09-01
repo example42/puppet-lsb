@@ -17,7 +17,7 @@ This module requires the presence of Example42 Puppi module in your modulepath.
 
 ## USAGE - Basic management
 
-* Install lsb
+* Install lsb core packages
 
         class { 'lsb': }
 
