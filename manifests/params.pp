@@ -18,7 +18,10 @@ class lsb::params {
 
   $package = $::operatingsystem ? {
     /(?i:Ubuntu|Debian|Mint)/              => 'lsb-base',
-    /(?i:RedHat|Centos|Scientific|Fedora)/ => 'redhat-lsb-core',
+    /(?i:RedHat|Centos|Scientific|Fedora)/ => $::lsbmajdistrelease ? {
+      6       => 'redhat-lsb-core',
+      default => 'redhat-lsb',
+    },
     /(?i:SLES|OpenSuSE)/                   => 'lsb-release',
   }
 
